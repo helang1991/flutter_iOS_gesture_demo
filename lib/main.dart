@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gesture_plugin/gesture_plugin.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,23 +30,22 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
+    GesturePlugin.gesture();
     return Scaffold(
       appBar: AppBar(
-
+        title: Text("I  am  FlutterViewController"),
       ),
       body: Center(
-
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-
-          ],
+        child: GestureDetector(
+          onTap: testTap,
         ),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+
+  void testTap() {
+    print('i clicked flutterViewController');
   }
 
 

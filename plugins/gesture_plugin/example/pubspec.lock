@@ -47,9 +47,9 @@ packages:
     source: sdk
     version: "0.0.0"
   gesture_plugin:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
-      path: "plugins/gesture_plugin"
+      path: ".."
       relative: true
     source: path
     version: "0.0.1"
