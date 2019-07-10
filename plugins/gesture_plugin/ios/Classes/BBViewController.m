@@ -19,10 +19,15 @@
     self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view.
 
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 500, 500)];
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, 500, 200)];
     label.font = [UIFont systemFontOfSize:20];
-    label.text = @"I am iOS Native ViewController\n try to click me";
+    label.text = @"iOS Native Other ViewController";
     [self.view addSubview:label];
+
+    UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(20, 200, 500, 200)];
+    label1.font = [UIFont systemFontOfSize:24];
+    label1.text = @"click anywhere";
+    [self.view addSubview:label1];
 }
 
 /*
