@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void testTap() {
-    print('i clicked flutterViewController');
+    print('I received gesture events in FlutterViewController');
   }
 
 
